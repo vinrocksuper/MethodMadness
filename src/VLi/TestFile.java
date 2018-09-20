@@ -1,3 +1,5 @@
+//Vincent Li 9/20/2018
+
 package VLi;
 
 import static VLi.VLiLib.*;
@@ -21,7 +23,9 @@ public class TestFile
         //The method adds all numbers from 0 to 10 and results in 55.
         println(sumUpTo(10));
 
-        //
-        println(leastCommonMultiple(2,4,6));
+        //The method checks the three integers for divisibility first and repeats until it finds an integer capable dividing evenly between the three integers.
+        //It returns 6 in this case.
+        println(leastCommonMultiple(2,5,3));
+
     }
 }

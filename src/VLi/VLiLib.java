@@ -1,3 +1,5 @@
+//Vincent Li 9/20/18
+
 package VLi;
 
 public class VLiLib
@@ -47,7 +49,25 @@ public class VLiLib
     }
     public static String leastCommonMultiple(int num1, int num2, int num3)
     {
+        //The reason I had to make these into doubles was because Java would automatically parse x/(any positive integer) to 0 and stop the loop.
+        double a = num1;
+        double b = num2;
+        double c = num3;
+        double x = 1.0;
+        while(x/a !=0 && x/b!=0 && x/c!=0)
+        {
+            //It looks for a value that has no remainders when divided by all 3 integers and returns it.
+            //It has to be converted back into an integer first though.
 
+            if(x%a == 0 && x%b==0 && x%c==0)
+            {
+                int val = (int)(x);
+                return(String.valueOf(val));
+            }
+            x++;
+        }
+        // This line is technically unnecessary as the if statement covers this line too.
         return(String.valueOf(num1*num2*num3));
-    }
+
+        }
 }
