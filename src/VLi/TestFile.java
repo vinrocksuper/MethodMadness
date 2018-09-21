@@ -17,15 +17,15 @@ public class TestFile
         //This is simple enough, if the string is entered in the format of 04/20/2001 then it returns it as 20/04/2001
         println(dateStr("04/20/2001"));
 
-        //This prints 5 lines, the first 4 multiples of 4 (except 0)
-        multiplicationTable(4,4);
+        //This prints 6 lines,0 and the first 5 multiples of 4  (0,4,8,12,16,20)
+        multiplicationTable(4,5);
 
         //The method adds all numbers from 0 to 10 and results in 55.
         println(sumUpTo(10));
 
         //The method checks the three integers for divisibility first and repeats until it finds an integer capable dividing evenly between the three integers.
-        //It returns 6 in this case.
-        println(leastCommonMultiple(2,5,3));
+        //It returns 12 in this case.
+        println(leastCommonMultiple(2,3,4));
 
     }
 }

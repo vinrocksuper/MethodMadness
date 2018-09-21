@@ -22,7 +22,7 @@ public class VLiLib
     {
         String month = date.substring(0,date.indexOf("/"));
         String day = date.substring(date.indexOf("/")+1,5);
-        String year = date.substring(6,date.length());
+        String year = date.substring(6);
         date = day + "-"+ month + "-" + year;
         return(date);
         //I break the inserted string into 3 smaller strings, one for day,month and year, then reassemble them in the provided format.
